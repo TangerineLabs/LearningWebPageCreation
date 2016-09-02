@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+}
+
+#disclamer {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orange;
+    padding: 10px;
+    display: inline-block;
+}
+    
+#htmlexample {
+    font-family: monospace;
+    font-size:16px;
+    color: red;
+}
+
+.headertypes{
+    color: purple;
+}

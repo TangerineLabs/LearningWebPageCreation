@@ -1,0 +1,75 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+<title>Learning to Write Web Pages</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+<h1>How To Create a Web page</h1>
+<p id="disclamer"><em>Disclaimer</em>: This page was done with the intention of learning how to create a web page.
+</p>
+<p>Web pages are written using <em><strong>html </strong></em> - (Hypertext Markup Language).<br> 
+Everything in <strong><em>html</em></strong> is contained in tags.</p>
+<p><em><strong>You do not need a fancy editor to create web pages. Any basic text editior should work.</strong></em><br> This particular page was written using <a href="https://notepad-plus-plus.org/">notepad++</a>. 
+However, you can as easly use your favorite text editor.<br> For more information see <a href="https://en.wikipedia.org/wiki/HTML_editor">here</a>.
+</p>
+<h2>Creating your html file</h2>
+<p>Fire up you favorite text editior and create a file named index.html. Save the file anywhere you want. Just make sure you know where its save location.<br>Wondering why the file name must be index.html? It just happens
+</p>
+<p>The first line of your html file must specify the the document type as html. This is done using the DOCTYPE! tag like this &lt;DOCTYPE! html&gt;.
+</p>
+<p>Everything on your webpage must be contained in the <strong>&lt;html&gt&lt;/html&gt</strong> tags. So at its most basic starting point a web page will start like this:
+<pre id="htmlexample">
+&lt;DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+<em><strong>...header information goes here...</strong></em>
+&lt/head&gt;
+
+&lt;body&gt;
+<em><strong>...body goes here...</strong></em>
+&lt/body&gt;
+
+&lt;/html&gt;
+</pre>
+<p>
+As you can see, web pages have to two sections. They are:
+<ol>
+<li>Head (<strong>&lt;head&gt;</strong><em>Header contents</em><strong>&lt;/head&gt</strong>)</li>
+<li>Body (<strong>&lt;body&gt;</strong><em>Body contents</em><strong>&lt;/body&gt;</strong>)</li>
+</ol>
+Except for the Title (<strong>&lt;title&gt<em>Page Title</em></strong><strong>&lt;/title&gt</strong>) information Head content is not shown on the web page. The title is shown in the browser title area.<br> 
+For simple pages styling (<strong>&lt;style&gt</strong><strong>&lt;/style&gt</strong>) information will also be located here. For more complicated webpages styling information is located in a seperate CSS file. 
+</p>
+<h1>Headings</h1>
+<p>You create a heading with the <strong>&lt;h&gt&lt;/h&gt</strong>tag. There are six heading types: <strong>&lt;h1&gt</strong> to <strong>&lt;h6&gt</strong>.<br> Font size degrease as the heading number increases. So default font sizes will look like this:<br>
+<h1 class="headertypes">This is a h1 heading</h1>
+<h2 class="headertypes">This is a h2 heading</h2>
+<h3 class="headertypes">This is a h3 heading</h3>
+<h4 class="headertypes">This is a h4 heading</h4>
+<h5 class="headertypes">This is a h5 heading</h5>
+<h6 class="headertypes">This is a h6 heading</h6>
+<h1>Photos</h1>
+</p>
+<p>Say I want to insert a photo.
+</p>
+<p><strong>Here is a photo of a cat!</strong><br>
+<img src="http://s.hswstatic.com/gif/whiskers-sam.jpg" height="200"><br>
+This is the code to pull the pic in:<br>
+&lt;img src="http://s.hswstatic.com/gif/whiskers-sam.jpg" height="200"&gt;
+</p>
+<p>Maybe what I wanted was a photo of a dog intead.<br>
+Well<br>
+<strong>Here is a photo of a dog</strong><br>
+<img src="http://www.beliefnet.com/columnists/islaminamerica/files/2015/07/puppy-300x200.jpg" height="200">
+</p>
+<p>How about a link to a webpage This is a link to a page about <a href="https://www.petsworld.in/blog/alsatian-and-german-shepherd-dogs-differences-distinguishing-features.html">Alsatians</a>. Apparently there is a debate as to  differences. I do not think there is a difference. To-ma-to - To-ma-to.
+</p>
+
+</body>
+
+</html>
