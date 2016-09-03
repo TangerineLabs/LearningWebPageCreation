@@ -10,19 +10,18 @@
 
 <body>
 <h1 id="bigheading">How To Create a Web page</h1>
-<p id="disclamer"><em>Disclaimer</em>: This page was done with the intention of learning how to create a web page.
+<p id="disclamer">Disclaimer: This page was done with the intention of learning how to create a web page.
 </p>
 <p>Web pages are written using <em><strong>html </strong></em> - (Hypertext Markup Language).<br>
 Everything in <strong><em>html</em></strong> is contained in tags.</p>
-<p><em><strong>You do not need a fancy editor to create web pages. Any basic text editior should work.</strong></em><br> This particular page was written using <a href="https://notepad-plus-plus.org/">notepad++</a>.
-However, you can as easly use your favorite text editor.<br> For more information see <a href="https://en.wikipedia.org/wiki/HTML_editor">here</a>.
+<p><em><strong>You do not need a fancy editor to create web pages. Any basic text editior should work.</strong></em><br> This particular page was written using <a href="https://notepad-plus-plus.org/">notepad++</a>. However, you can as easly use your favorite text editor.<br> For more information see <a href="https://en.wikipedia.org/wiki/HTML_editor">here</a>.
 </p>
-<h2>Creating your html file</h2>
-<p>Fire up you favorite text editior and create a file named index.html. Save the file anywhere you want. Just make sure you know where its save location.<br>Wondering why the file name must be index.html? It just happens
+<h2>Creating Your HTML File</h2>
+<p>Fire up your favorite text editior and create a file named index.html. Save the file anywhere you want. How about in ~home/webpage (using Microsoft Windows: Documents\webpage)?<br>
+Wondering why the file name must be index.html? It just happens this will be the landing page when someone visits your website. Remember a website can have one or more pages. However, no matter how many pages there are the <em>index</em> page will be the <em>landing</em> page.
 </p>
-<p>The first line of your html file must specify the the document type as html. This is done using the DOCTYPE! tag like this &lt;DOCTYPE! html&gt;.
-</p>
-<p>Everything on your webpage must be contained in the <strong>&lt;html&gt;&lt;/html&gt;</strong> tags. So at its most basic starting point a web page will start like this:
+<h3>HTML Page Structure</h3>
+<p>Everything on your webpage must be contained in the <strong>tags</strong>. So, at its most basic starting point a web page will start like this:
 <pre id="htmlexample">
 &lt;DOCTYPE html&gt;
 &lt;html&gt;
@@ -33,44 +32,46 @@ However, you can as easly use your favorite text editor.<br> For more informatio
 
 &lt;body&gt;
 <em><strong>...body goes here...</strong></em>
-lt/body&gt;
+&lt;/body&gt;
 
 &lt;/html&gt;
 </pre>
-<p>
-As you can see, web pages have to two sections. They are:
+<p>Notice the first line of the the document specifies the document as type html.<br> From here the real meat and bones of the html file begins. It starts with the opening html tag (&lt;html&gt;) and ends with the closing html tag (&lt;/html&gt;).<br>
+There are two sections:
 <ol>
-<li>Head (<strong>&lt;head&gt;</strong><em>Header contents</em><strong>&lt;/head&gt;</strong>)</li>
-<li>Body (<strong>&lt;body&gt;</strong><em>Body contents</em><strong>&lt;/body&gt;</strong>)</li>
+<li>Head</li>
+<li>Body</li>
 </ol>
-Except for the Title (<strong>&lt;title&gt;<em>Page Title</em></strong><strong>&lt;/title&gt;</strong>) information Head content is not shown on the web page. The title is shown in the browser title area.<br>
-For simple pages styling (<strong>&lt;style&gt;</strong><strong>&lt;/style&gt;</strong>) information will also be located here. For more complicated webpages styling information is located in a seperate CSS file.
 </p>
-<h1>Headings</h1>
-<p>You create a heading with the <strong>&lt;h&gt;&lt;/h&gt;</strong>tag. There are six heading types: <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong>.<br> Font size degrease as the heading number increases. So default font sizes will look like this:<br>
-<h1 class="headertypes">This is a h1 heading</h1>
-<h2 class="headertypes">This is a h2 heading</h2>
-<h3 class="headertypes">This is a h3 heading</h3>
-<h4 class="headertypes">This is a h4 heading</h4>
-<h5 class="headertypes">This is a h5 heading</h5>
-<h6 class="headertypes">This is a h6 heading</h6>
-<h1>Photos</h1>
+<h3>Page Header</h3>
+<p>Header content is not shown directly on the web page. Header, at a minimum contains the page title enclosed in title tags (&lt;title&gt;&lt;/title&gt;).<br>
+For simple pages, styling (<strong>&lt;style&gt;</strong><strong>&lt;/style&gt;</strong>) information will also be located here. For more complicated webpages styling information is located in a seperate CSS file and a link to that file will be located here.<br>
+Other information located in the header section includes links to page icon and sripts. For more information see this list at <a href="http://www.w3schools.com/tags/tag_head.asp">w3schools</a>.
 </p>
-<p>Say I want to insert a photo.
+<h3>Page Body</h3>
+<p>All the visible content on your web page is located in the body section (between the opening and closing body tags).<br>
+  The following are generally used to organize the page body content:
+  <ul>
+    <li>Paragraph &lt;p&gt;&lt;/p&gt; - Starts a new paragraph</li>
+    <li>Heading &lt;h&gt;&lt;/h&gt; - Creates a heading</li> Headings are ordered from 1 to 6 and size decreases as the number increases. e.g. a h1 tags are &lt;h1&gt;&lt;/h1&gt;
+    <li><em>Emphisis</em> &lt;em&gt;&lt;/em&gt; - Enclosed text appears in <em>italics</em></li>
+    <li><Strong>stong</strong> &lt;strong&gt;&lt;/strong&gt; - Enclosed text appear <strong>bold</strong></li> Emphasis and strong tags can be combined, one inside the next, to display <em><strong>bolded and italized</strong></em> text.
+    <li>List - These come in two flavors</li>
+    <ol>
+      <li>Ordered (numbered) list &lt;ol&gt;&lt;/ol&gt;</li>
+      <li>Un-ordered list &lt;ul&gt;&lt;/ul&gt;</li>
+    </ol>
+      Regardless of list type list items are created using the &lt;li&gt;&lt;/li&gt; tag.<br> See <a href="http://www.w3schools.com/html/html_lists.asp">here</a> for more information on lists.
+    <li>Images &lt;img&gt; - also need source and size information</li>
+    Here is the complete tag used to display the image below: &lt;img src="http://s.hswstatic.com/gif/whiskers-sam.jpg" height="200"&gt;
+    <img src="http://s.hswstatic.com/gif/whiskers-sam.jpg" height="200">
+    <li> hyperlink &lt;a&gt; - also need a reference to the external or internal link and the text to display</li>
+    The followign will create a hyperlink to <a href="https://www.google.com/">google.com</a><br>
+    &lt;a href="wwww.google.com">google.com&lt;/a&gt;
+  </ul>
 </p>
-<p><strong>Here is a photo of a cat!</strong><br>
-<img src="http://s.hswstatic.com/gif/whiskers-sam.jpg" height="200"><br>
-This is the code to pull the pic in:<br>
-&lt;img src="http://s.hswstatic.com/gif/whiskers-sam.jpg" height="200"&gt;
+<p> Thats it. A basic guide to web page creation.
 </p>
-<p>Maybe what I wanted was a photo of a dog intead.<br>
-Well<br>
-<strong>Here is a photo of a dog</strong><br>
-<img src="http://www.beliefnet.com/columnists/islaminamerica/files/2015/07/puppy-300x200.jpg" height="200">
-</p>
-<p>How about a link to a webpage This is a link to a page about <a href="https://www.petsworld.in/blog/alsatian-and-german-shepherd-dogs-differences-distinguishing-features.html">Alsatians</a>. Apparently there is a debate as to  differences. I do not think there is a difference. To-ma-to - To-ma-to.
-</p>
-
 </body>
 
 </html>
